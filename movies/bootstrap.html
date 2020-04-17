@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style type="text/css">
+       
+    </style>
+
+    <title>Horror Movies</title>
+    <style>
+        .container {
+            background-color: black;
+            border: 5px solid red; 
+            border-radius: 20px;  
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 10px;
+            color:red;
+
+        }
+        .container-rounded{
+            border-radius: 20px;
+            border-top: 10px solid red;
+            border-bottom: 10px solid red;
+            border-left: 10px solid red;
+            border-right: 10px solid red;
+    img{
+       max-width: 100%; 
+    }
+        .top10 {
+            position: relative;
+        }
+       .top10:hover>i {
+            display: block;
+        }
+         .cover {
+        position: relative;
+        max-width: 100px;
+        max-height: 300px;
+    }
+    
+    .cover:hover>i {
+        display: block;
+    }
+  
+    .cover>i {
+        position: absolute;
+        text-align: center;
+        display: none;
+    }
+
+    </style>
+</head>
+
+<body>
+    <!--navbar-->
+    <nav class="navbar navbar-light bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="/poster/horror.jpg" width="30" height="30" class="d-inline-block align-top"
+                alt="logo">
+            
+        </a>
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">What's new</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Top 10</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Request member card</a>
+            </li>
+        </ul>
+    </nav>
+    <!--end nav-->
+   <!--Jumbotron-->
+    <div class="jumbotron jumbotron-fluid" style="background-color:transparent;">
+        <div class="container">
+            <h1 class="display-4">ENTER AT YOUR OWN RISK</h1>
+            <p class="lead">Not for the faint of heart.</p>
+            <!--form-->
+            <form>
+                <form>
+                    <div class="form-row align-items-center">
+                        <div class="col-auto">
+                            <label class="sr-only" for="inlineFormInput">Member Nr.</label>
+                            <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Member Nr.">
+                        </div>
+                        <div class="col-auto">
+                            <label class="sr-only" for="inlineFormInputGroup">Password</label>
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">&#128273;</div>
+                                </div>
+                                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+                                <label class="form-check-label" for="autoSizingCheck">
+                                    Remember me
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-primary mb-2">Submit</button>
+                        </div>
+                    </div>
+                </form>
+                    <!--end form-->
+        </div>
+    </div>
+   <!--end Jumbo-->
+    <!--carousel-->
+     <div class="container">
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./poster/Antlers.jpg" class="d-block w-100" alt="Antlers">
+            </div>
+            <div class="carousel-item">
+                <img src="./poster/Grudge.jpg" class="d-block w-100" alt="The Grudge">
+            </div>
+            <div class="carousel-item">
+                <img src="./poster/behind-you.jpg" class="d-block w-100 h-300" alt="Behind you">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <!--end carousel-->
+
+    <!--last horror movie-->
+    <div class="container">
+        <h2>What's new</h2>
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-12 col-mb">
+                <div class="card">
+                    <div class="cover">
+                        <img src="./poster/underwater.jpg" class="card-img-top" alt="underwater">
+                        <i class="fa fa-play-circle fa-4x text-white"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Underwater</h5>
+                        <p><span class="badge badge-primary">IMDb 5.9</span></p>
+                        <p class="card-text-left">Disaster strikes more than six miles below the ocean surface when water crashes through the walls of a drilling station.
+                        Led by their captain, the survivors realize that their only hope is…</p>
+                        <p>
+                            <a href="#" class="btn btn-dark">more</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12 col-mb">
+                <div class="card">
+                    <div class="cover">
+                        <img src="./poster/horse girl.jpg" class="card-img-top" alt="horse girl">
+                        <i class="fa fa-play-circle fa-4x text-white"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Horse Girl</h5>
+                        <p><span class="badge badge-primary">IMDb 5.9</span></p>
+                        <p class="card-text-left">Sarah, a socially isolated woman with a fondness for arts and crafts, horses, and supernatural crime shows finds her
+                        increasingly lucid dreams trickling into her waking life..</p>
+                        <p>
+                            <a href="#" class="btn btn-dark">more</a>
+                        </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12 col-mb">
+                <div class="card">
+                    <div class="cover">
+                        <img src="./poster/invisible.jpg" class="card-img-top" alt="the invisible man">
+                        <i class="fa fa-play-circle fa-4x text-white"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">The Invisible Man</h5>
+                        <p><span class="badge badge-primary">IMDb 7.2</span></p>
+                        <p class="card-text-left">When Cecilia's abusive ex takes his own life and leaves her his fortune, she suspects his death was a hoax. As a series
+                        of coincidences turn lethal, Cecilia works to prove that she is being hunted by someone nobody can see..</p>
+                        <p>
+                            <a href="#" class="btn btn-dark">more</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12 col-mb">
+                <div class="card">
+                    <div class="latest-cover">
+                        <img src="./poster/swallow.jpg" class="card-img-top" alt="Swallow">
+                        <i class="fa fa-play-circle fa-4x text-white"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Swallow</h5>
+                        <p><span class="badge badge-primary">IMDb 6.3</span></p>
+                        <p class="card-text-left">Hunter, a newly pregnant housewife, finds herself increasingly compelled to consume dangerous objects. As her husband
+                        and his family tighten their control over her life, she must confront the dark secret behind her new obsession..</p>
+                        <p>
+                            <a href="#" class="btn btn-dark">Vai alla scheda</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12 col-mb">
+                <div class="card">
+                    <div class="cover">
+                        <img src="./poster/hunt.jpg" class="card-img-top" alt="The hunt">
+                        <i class="fa fa-play-circle fa-4x text-white"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">The Hunt</h5>
+                        <p><span class="badge badge-primary">IMDb 6.4 </span></p>
+                        <p class="card-text-left">Twelve strangers wake up in a clearing. They don't know where they are, or how they got there. They don't know they've
+                        been chosen - for a very specific purpose - The Hunt..</p>
+                        <p>
+                            <a href="#" class="btn btn-dark">more</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12 col-mb">
+                <div class="card">
+                    <div class="cover">
+                        <img src="./poster/knight.jpg" class="card-img-top" alt="The Green Knight">
+                        <i class="fa fa-play-circle fa-4x text-white"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">The Green Knight</h5>
+                        <p><span class="badge badge-primary">IMDb n/c </span>&nbsp;<span
+                                class="badge badge-danger">Coming Soon</span></p>
+                        <p class="card-text-left">A fantasy re-telling of the medieval story of Sir Gawain and the Green Knight.</p>
+                        <p>
+                            <a href="#" class="btn btn-dark">more</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12 col-mb">
+                <div class="card">
+                    <div class="cover">
+                        <img src="./poster/quiet.jpg" class="card-img-top" alt="A quiet place">
+                        <i class="fa fa-play-circle fa-4x text-white"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">A Quiet Place</h5>
+                        <p><span class="badge badge-primary">IMDb 7.5 </span></p>
+                        <p class="card-text-left">In a post-apocalyptic world, a family is forced to live in silence while hiding from monsters with ultra-sensitive
+                        hearing.</p>
+                        <p>
+                            <a href="#" class="btn btn-dark">more</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12 col-mb">
+                <div class="card">
+                    <div class="cover">
+                        <img src="./poster/candyman.jpg" class="card-img-top" alt="CandyMan">
+                        <i class="fa fa-play-circle fa-4x text-white"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Candyman</h5>
+                        <p><span class="badge badge-primary">IMDb n/c</span>&nbsp;<span
+                                class="badge badge-danger">Coming Soon</span></p>
+                        <p class="card-text-left">A "spiritual sequel" to the 1992 horror film 'Candyman' that returns to the now-gentrified Chicago neighborhood where
+                        the legend began..</p>
+                        <p>
+                            <a href="#" class="btn btn-dark">more</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end news-->
+    <!--Top 10 -->
+    <div class="container container-rounded">
+        <h2>Top 10</h2>
+        <div class="row">
+            <div class="col-lg-6 col-mb">
+                <div class="card badge-red">
+                    <div class="card-header bg-danger text-center text-dark font-weight-bold">1</div>
+                    <div class="top10">
+                        <img src="./poster/shining.jpg" class="card-img-top" alt="The Shining">
+                        <i class="fa fa-play-circle fa-4x text-dark"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">The Shining</h5>
+                        <p><span class="badge badge-primary">#1</span>&nbsp;</span></p>
+                        <p class="card-text-left">The writer Jack moves with his family to a remote hotel in the midst of the Colorado mountains over the winter months.
+                        While Koch Hallorann believes that Jack's son Danny has shining, a clairvoyant gift, the dark history of Hotel Jack will
+                        soon be driving more and more in n absolute madness. Danny and his mother are in mortal danger very soon.</p>
+                        <p>
+                            <a href="#" class="btn btn-dark">more..</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-mb">
+                <div class="card badge-light">
+                    <div class="card-header bg-danger text-center text-dark font-weight-bold">2</div>
+                    <div class="top10">
+                        <img src="./poster/pi.jpg" class="card-img-top" alt="Pi">
+                        <i class="fa fa-play-circle fa-4x text-white"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Pi</h5>
+                        <p><span class="badge badge-primary">#2</span> </p>
+                        <p class="card-text-left" >The paranoid math genius Maximiliam Cohen believes that everything in nature can be understood by numbers. That's why he
+                        embarks on a feverish search for this universal code. With the help of his computer Euclid, he tries predictable
+                        patterns in the price data of the global acti enmarkts</p>
+                        <p>
+                            <a href="#" class="btn btn-dark">more..</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-mb">
+                <div class="card badge-light">
+                    <div class="card-header bg-danger text-center text-dark font-weight-bold">3</div>
+                    <div class="top10">
+                        <img src="./poster/amityville.jpg" class="card-img-top" alt="amityville">
+                        <i class="fa fa-play-circle fa-4x text-white"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">The Amityville Horror</h5>
+                        <p><span class="badge badge-primary">#3</span></p>
+                        <p class="card-text-left">The eldest son of the DeFeos shoots his parents in their bedroom, then goes into the children's room and kills them with
+                        a gun. A year later, in November 1975, George and Kathy Lutz bought the house at a very reasonable price and soon moved
+                        in with their three children..</p>
+                        <p>
+                            <a href="#" class="btn btn-dark">more..</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-mb">
+                <div class="card badge-light">
+                    <div class="card-header bg-danger text-center text-dark font-weight-bold">4</div>
+                    <div class="top10-cover">
+                        <img src="./poster/blair.jpg" class="card-img-top" alt="The Blair Witch Project">
+                        <i class="fa fa-play-circle fa-4x text-white"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">The Blair Witch Project</h5>
+                        <p><span class="badge badge-primary">#4</span></p>
+                        <p class="card-text-left">In the Black Hill Forest, a remote forest area in Maryland, the so-called Blair witch is said to be up to mischief. To
+                        make a documentary about the legend, the three film students Heather Donahue, Joshua Leonard and Michael C. Williams go
+                        into the wild. your research with cameras and a DAT recorder. They soon notice..</p>
+                        <p>
+                            <a href="#" class="btn btn-dark">more..</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-mb">
+                <div class="card badge-light">
+                    <div class="card-header bg-danger text-center text-dark font-weight-bold">5</div>
+                    <div class="top10">
+                        <img src="./poster/poltergeist.jpg" class="card-img-top" alt="Poltergaist">
+                        <i class="fa fa-play-circle fa-4x text-white"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Poltergeist</h5>
+                        <p><span class="badge badge-primary">#5</span></p>
+                        <p class="card-text-left">The young Carol Anne Freeling seems to be able to make contact with strange creatures on a television. They soon visit
+                        the family home and play some harmless pranks, such as moving chairs and bending cutlery. But with these harmless S It
+                        doesn't last long - Carol is kidnapped. The freelings contact numerous scientists who cannot help them all. Finally, a
+                        fortune teller gives them hope..</p>
+                        <p>
+                            <a href="#" class="btn btn-dark">more...</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-mb">
+                <div class="card badge-light">
+                    <div class="card-header bg-danger text-center text-dark font-weight-bold">6</div>
+                    <div class="top10">
+                        <img src="./poster/sixty.jpg" class="card-img-top" alt="the sixty sense">
+                        <i class="fa fa-play-circle fa-4x text-white"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">The Sixty Sense</h5>
+                        <p><span class="badge badge-primary">#6</span></p>
+                        <p class="card-text-left">Malcolm Crowe, a child psychologist, starts treating a young boy who acts as a medium of communication between the
+                        former and a slew of unhappy spirits...</p>
+                        <p>
+                            <a href="#" class="btn btn-dark">more..</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-mb">
+                <div class="card badge-light">
+                    <div class="card-header bg-danger text-center text-dark font-weight-bold">7</div>
+                    <div class="top10">
+                        <img src="./poster/Thering.jpg" class="card-img-top" alt="the ring">
+                        <i class="fa fa-play-circle fa-4x"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">The Ring</h5>
+                        <p><span class="badge badge-primary">#7</span></p>
+                        <p class="card-text-left">Julia fights to protect her boyfriend Holt, who watches a cursed video that kills the viewer in seven days. She finds
+                        out that there is a hidden message inside the video, which might be the solution..</p>
+                        <p>
+                            <a href="#" class="btn btn-dark">more..</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-mb">
+                <div class="card badge-light">
+                    <div class="card-header bg-danger text-center text-dark font-weight-bold">8</div>
+                    <div class="top10">
+                        <img src="./poster/TheOthers.jpg" class="card-img-top" alt="">
+                        <i class="fa fa-play-circle fa-4x text-white"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <p><span class="badge badge-primary">#8</span>
+                        </p>
+                        <p class="card-text-left">Grace moves into a new house with her two photosensitive children in Jersey. When a series of inexplicable events occur,
+                        Grace starts believing that her house is haunted..</p>
+                        <p>
+                            <a href="#" class="btn btn-dark">more..</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-mb">
+                <div class="card badge-light">
+                    <div class="card-header bg-danger text-center text-dark font-weight-bold">9</div>
+                    <div class="top10">
+                        <img src="./poster/sixty.jpg" class="card-img-top" alt="The silence of lamb">
+                        <i class="fa fa-play-circle fa-4x text-white"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">The Silence of Lamb</h5>
+                        <p><span class="badge badge-primary">#9</span></p>
+                        <p class="card-text-left">Clarice Starling, an FBI agent, seeks help from Hannibal Lecter, a psychopathic serial killer and former psychiatrist,
+                        in order to apprehend another serial killer who has been claiming female victims.</p>
+                        <p>
+                            <a href="#" class="btn btn-dark">more..</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-mb">
+                <div class="card badge-light">
+                    <div class="card-header bg-danger text-center text-dark font-weight-bold">10</div>
+                    <div class="top10">
+                        <img src="./poster/IT.png" class="card-img-top" alt="IT">
+                        <i class="fa fa-play-circle fa-4x text-white"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">IT</h5>
+                        <p><span class="badge badge-primary">#10</span></p>
+                        <p class="card-text-left">In 1960, seven preteen outcasts fight an evil demon that poses as a child-killing clown. Thirty years later, they
+                        reunite to stop the demon once and for all when it returns to their hometown..</p>
+                        <p>
+                            <a href="#" class="btn btn-dark">more..</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Top 10 -->
+    
+
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
